@@ -1,17 +1,28 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from './components/Card';
 //import {shuffle} from 'lodash';
 
+/**Imagenes */
+import coal from "../public/images/coal.png";
+import iron from "../public/images/iron.png";
+import diamond from "../public/images/diamond.jpg";
+import emerald from "../public/images/emerald.jpg";
+import gold from "../public/images/gold.jpg";
+import redstone from "../public/images/redstone.jpg";
+import lapis from "../public/images/lapis.jpg";
+import quartz from "../public/images/qua.png";
+
+
 function App() {
   const Images = [
-    {id:1, "src": "/images/coal.png", stat: false},
-    {id:2, "src": "/images/iron.png", stat: false},
-    {id:3, "src": "/images/diamond.jpg", stat: false},
-    {id:4, "src": "/images/emerald.jpg", stat: false},
-    {id:5, "src": "/images/gold.jpg", stat: false},
-    {id:6, "src": "/images/redstone.jpg", stat: false},
-    {id:7, "src": "/images/lapis.jpg", stat: false},
-    {id:8, "src": "/images/qua.png", stat: false}
+    {id:1, "src": coal, stat: false},
+    {id:2, "src": iron, stat: false},
+    {id:3, "src": diamond, stat: false},
+    {id:4, "src": emerald, stat: false},
+    {id:5, "src": gold, stat: false},
+    {id:6, "src": redstone, stat: false},
+    {id:7, "src": lapis, stat: false},
+    {id:8, "src": quartz, stat: false}
   ]//.sort(() => Math.random() - 0.5)) 
 
   const [cards, setCards] = useState([]);
