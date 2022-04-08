@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-size: 1.5em;
   text-align: center;
-  background: #94b7fc;
+  background-image: linear-gradient(#8CB1FF, #B7D2FF, #5576B9);
   color: #fff;
 }
 .App {
